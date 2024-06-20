@@ -1,0 +1,25 @@
+import java.util.*;
+class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner scan=new Scanner(System.in);
+        int a=scan.nextInt();
+        int b=scan.nextInt();
+        System.out.println(lcm(a,b));
+    }
+    public static int hcf(int a,int b)
+    {
+        if(a==0)
+        {
+            return b;
+        }
+       int m=hcf(b%a,a); 
+       return m;
+    }
+    public static int lcm(int a,int b)
+    {
+        int l=a*b/hcf(a,b);
+        return l;
+    }
+}

@@ -1,0 +1,16 @@
+import java.util.*;
+class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner scan=new Scanner(System.in);
+        String s=scan.nextLine();
+        String a[]=s.split(" ");
+        String s1="";
+        for(String b:a)
+        {
+            s1=s1+Character.toUpperCase(b.charAt(0))+b.substring(1)+" ";
+        }
+        System.out.println(s1);
+    }
+}

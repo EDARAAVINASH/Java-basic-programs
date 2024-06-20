@@ -1,0 +1,27 @@
+import java.util.*;
+class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner scan=new Scanner(System.in);
+        int n=scan.nextInt();
+        pascal(n);
+    }
+    public static void pascal(int n)
+    {
+        for(int i=0;i<=n;i++)
+        {
+            System.out.println(fact(n)/(fact(i)*fact(n-i)));
+        }
+    }
+    public static int fact(int n)
+    {
+        int m=1;
+        while(n>0)
+        {
+            m=m*n;
+            n--;
+        }
+        return m;
+    }
+}

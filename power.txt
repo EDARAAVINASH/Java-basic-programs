@@ -1,0 +1,21 @@
+import java.util.*;
+class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner scan=new Scanner(System.in);
+        int a=scan.nextInt();
+        int b=scan.nextInt();
+        power(a,b);
+    }
+    public static void power(int a,int b)
+    {
+        int m=1;
+        while(b>0)
+        {
+            m=m*a;
+            b--;
+        }
+        System.out.println(m);
+    }
+}

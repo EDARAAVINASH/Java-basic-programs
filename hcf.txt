@@ -1,0 +1,20 @@
+import java.util.*;
+class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner scan=new Scanner(System.in);
+        int a=scan.nextInt();
+        int b=scan.nextInt();
+        System.out.println(hcf(a,b));
+    }
+    public static int hcf(int a,int b)
+    {
+        if(a==0)
+        {
+            return b;
+        }
+       int m=hcf(b%a,a); 
+       return m;
+    }
+}

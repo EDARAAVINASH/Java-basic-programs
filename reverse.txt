@@ -1,0 +1,19 @@
+import java.util.*;
+class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner scan=new Scanner(System.in);
+        int n=scan.nextInt();
+        rev(n);
+    }
+    public static void rev(int n)
+    {
+        System.out.print(n%10);
+        n=n/10;
+        if(n>0)
+        {
+            rev(n);
+        }
+    }
+}
